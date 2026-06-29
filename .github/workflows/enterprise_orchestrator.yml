@@ -62,7 +62,7 @@ jobs:
         with:
           registry: ghcr.io
           username: AzureMon
-          password: ${{ secrets.my-token }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and Export Container
         uses: docker/build-push-action@v6
